@@ -1,0 +1,408 @@
+#fullscreen{position:relative;}
+.homesearch-cta {position:absolute;bottom:0px;width:100%;background-color: rgba(0, 0, 0, 0.3);padding:25px 0;}
+.homesearch-cta h1{color:#fff;}
+.homesearch-cta p{margin:20px 0px 0px 0px;color:#fff;text-align:center;}
+.homesearch-cta a{color:#fff;text-decoration:underline;}
+
+.homesearch-cta form{text-align:center;}
+.homesearch-cta form i{color:#fff;margin-right:5px;}
+.homesearch-cta form fieldset>label{margin-right:20px;}
+.homesearch-cta form fieldset{padding:20px 10px;margin:0;background-color: rgba(255,255, 255, 0.25);}
+.homesearch-cta form fieldset:hover{background-color: rgba(229,9, 127,0.5);}
+.homesearch-cta form #value1{width:224px;}
+
+
+.tm-top-a {margin-top:-220px;}
+.home.uk-panel {background:#444444;opacity:0.5;padding:25px;}
+.home.uk-panel:hover {opacity:0.85;background:#e5097f;}
+.home .app-box-content form {margin:0;}
+.home .app-box-content form input{width:75%;margin:0}
+.home .app-box-content form a{float:right;margin-top:5px;}
+.home .app-box-footer {display:none;}
+
+#fullscreen.colored{background:#e5097f;padding:25px 0;margin:25px 0;}
+#fullscreen.colored p,
+#fullscreen.colored h3,
+#fullscreen.colored li
+{color:#fff;}
+#fullscreen.colored a{
+color:#ccc;
+}
+ #community-wrap .js-focus-cover>img[src=""]{
+display:none;
+} 
+
+a[title="JomSocial, Social Networking for Joomla!"]{display:none;}
+
+/*#community-wrap .js-focus-cover>img[src=""]+.js-focus-gradient {
+display:none;
+} */
+
+.homepage-logos{margin:50px 0;}
+.homepage-logos img{
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); 
+    
+    }
+    
+    .homepage-logos img:hover{
+     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+    
+    }
+
+.uk-navbar-nav > li > a.uk-button-primary{
+color:#fff;
+
+}
+.js-focus-avatar,.js-focus-avatar img{border-radius:50%;border:1px solid #444;}
+
+
+
+@media (min-width: 768px){
+	.tm-headerbar {
+		float:left;
+	}
+	.tm-navbar{
+		float:right;
+	}
+	.tm-toolbar	{
+		float:right;
+	}
+	
+	.tm-headerbar,
+	.tm-navbar
+	{
+		margin:20px 0;
+	}
+	
+	.tm-toolbar{
+		margin:27px 0;
+	}
+
+	
+	
+}
+
+@media (max-width: 768px){
+	
+	.tm-navbar{
+		margin: 0;
+	}
+	
+	.homesearch-cta {position:relative;background-color: transparent;padding:25px 0;}
+	.homesearch-cta h1{color:#444;}
+	.homesearch-cta form fieldset{padding:20px 10px;margin:0;background-color: rgba(229,9, 127,1);}
+	.homesearch-cta form fieldset:hover{background-color: rgba(229,9, 127,1);}
+
+	.home.uk-panel {opacity:1;background:#e5097f;}
+
+}
+
+@media (max-width: 480px){
+.home.uk-panel {opacity:1;background:#e5097f;}
+.home .app-box-content form {text-align:center;}
+.home .app-box-content form input{width:95%;margin:0}
+.home .app-box-content form a{float:none;margin-top:20px;}
+
+
+
+}
+
+
+
+/*header*/
+.uk-header{background:#fff;border-bottom:1px solid #e5097f;}
+
+
+.tm-headerbar { margin-bottom: 20px; }
+
+.tm-toolbar {
+	margin:20px 0;
+}
+.tm-toolbar .cMod-Notify{
+
+margin:0;
+
+}
+
+.visibility-hidden{visibility:hidden;}
+
+/*Map*/
+.map-container{position:fixed;height:100%;top:76px;left:0;bottom:0;}
+#map-canvas{ position: relative; overflow:hidden ;width:100%;height:100%; top: 0; right: 0; bottom: 0; left: 0;}
+
+/*Main Menu*/
+
+
+/*com_volunteers*/
+.volunteering-opportunity.teaser:hover .showonhover{display:block!important;}
+
+/*Opportunity Wizard*/
+#opportunity-wizard-toolbar button.published.uk-active{background-color: #8cc14c;color: #ffffff;}
+#opportunity-wizard-toolbar button.unpublished.uk-active{background-color: #d32c46;color: #ffffff;}
+
+a.uk-button.facebook{ background:#3F4E7C; color:#ffffff;}
+
+
+
+
+
+
+
+
+/************** Fullscreen Slideshow ****************/
+
+
+
+
+
+
+/*****************************************************/
+
+
+.truncate {
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/* Header */
+.dw-header-sticky{
+	top:0;
+	position:fixed;
+	z-index:20;
+	width:100%;
+}
+.uk-navbar-toggle-text-link {
+	font-size: 17px;
+	color: #444444;
+	text-decoration: none;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	line-height: 35px;
+	height: 35px;
+	float: left;
+}
+.uk-navbar-toggle-text-link:hover {
+	text-decoration: none;
+}
+.toolbar-r{
+	
+	font-size: 17px;
+	color: #444444;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	line-height: 35px;
+	height: 35px;
+	
+}
+.toolbar-r a,
+.toolbar-r li a
+{	
+	font-size: 17px;
+	line-height: 35px;
+	color: #444444;
+	text-decoration: none;
+}
+
+.toolbar-r a:hover,
+.toolbar-r li a:hover
+{
+	color: #e5097f;
+	text-decoration: none;
+}
+
+
+
+/*****************************************************/
+
+
+/************ Footer ********************************/
+.tm-footer {
+	background:#444;
+}
+.uk-nav-side > li.uk-active > a {
+background: none;
+color:#e5097f!important;
+}
+
+
+
+
+
+/*****************************************************/
+
+/** Volunteering Opportunities ****************************************************/
+.volunteering-opportunity.teaser{border:1px solid #f7f7f7;border-bottom:1px solid #dddddd;}
+.volunteering-opportunity.teaser:hover{background:#ffffff;border:1px solid #aaaaaa;}
+
+
+/** Pagination ****************************************************/
+ul.uk-pagination>li { border-radius:50%;}
+.uk-pagination > .uk-active > span { border-radius:50%; }
+.uk-pagination > li > a { background: #ffffff; border-radius:50%;}
+
+/** Statistics ************************************************************************/
+.statistics .number{}
+.statistics .pending-color{color:orange;}
+
+
+/** Icons ************************************************************************/
+.uk-icon-extra-large:before {
+font-size: 58px;
+line-height: 58px;
+font-weight: normal;
+}
+.uk-icon-extra-extra-large:before {
+font-size: 500%;
+}
+
+/** Text contrast ************************************************************************/
+.uk-text-contrast{color:#ffffff;}
+.uk-button-contrast{
+	border:1px solid #fff;
+	background:transparent;
+	color:#fff;
+	text-decoration:none!important;
+}
+.uk-button-contrast:hover{
+	color:#444444!important;
+	text-decoration:none!important;
+}
+
+.uk-button-blank{
+background: #ffffff;
+border:1px solid #dddddd;
+}
+.uk-button-blank.uk-active,
+.uk-button-blank:hover{
+background: #e5097f;
+border:1px solid #e5097f;
+color:#ffffff!important;
+}
+
+
+
+
+/** Text size ************************************************************************/
+
+/** Text contrast ************************************************************************/
+.uk-text-extra-large {
+font-size: 32px;
+line-height: 38px;
+font-weight: normal;
+}
+.uk-text-extra-extra-large {
+font-size: 48px;
+line-height: 64px;
+font-weight: normal;
+}
+
+/** donorwiz Layout ************************************************************************/
+.layout-donorwiz .tm-main{padding-top:76px;}
+
+/** Full Layout ************************************************************************/
+/* .layout-full .tm-main{padding-top:76px;} */
+
+
+
+/** Map Layout ************************************************************************/
+.layout-map .tm-main{padding-top:76px;}
+
+/** Narrow Layout ************************************************************************/
+.layout-narrow .dw-header-sticky{position:static;}
+
+/** Social Login Buttons ************************************************************************/
+.uk-button.facebookslogin{background:#3F4E7C;color:#ffffff;}
+.uk-button.googleslogin{background:#DD4B38;color:#ffffff;}
+
+/** Forms *********************************************************************************/
+.uk-form-large.invalid{
+border-color: #dc8d99!important;
+background: #fff7f8!important;
+color: #d85030!important;
+}
+
+
+/** Bottom - B **********************************************************************/
+.dw-bottom-b{background:#444;}
+
+
+/** Thumbnails ***********************************************************************/
+.uk-thumbnail-extra-mini{
+	max-width: 32px;
+}
+
+/** uk panel box ***********************************************************************/
+.uk-panel-box-account{
+	background: #e5097f;
+	color: #ffffff;
+}
+
+.uk-panel-box-donations{
+	background: #e5097f;
+	color: #ffffff;
+}
+
+.uk-panel-box-volunteers{
+	background: #e5097f;
+	color: #ffffff;
+}
+
+.uk-panel-dark {
+
+background: #333333;
+color: #ffffff;
+
+}
+
+.uk-panel-dark .uk-nav-side .uk-nav-header {
+color: #ffffff;
+}
+
+.uk-panel-dark .uk-nav-side > li > a {
+color: #ffffff;
+}
+
+.uk-panel-dark .uk-nav-side .uk-nav-divider {
+border-top: 1px solid #555555;
+}
+
+
+#jform_amount.amnt>input[type=radio]{margin:0 3px;}
+
+
+#jform_amount0[type=radio]:before{content:'5';}
+#jform_amount1[type=radio]:before{content:'10';}
+#jform_amount2[type=radio]:before{content:'20';}
+#jform_amount3[type=radio]:before{content:'50';}
+
+.uk-form .amnt input[type=radio] {
+  width: 44px;
+  height: 44px;
+}
+#jform_amount.amnt>input[type=radio]:before{
+	display:block;
+	width: 38px;
+	height: 38px;
+	margin: 2px auto 0;
+	line-height:38px;
+	text-align:center;
+	color:#999;
+}
+
+.uk-form .amnt input[type=radio]:checked:before {
+
+
+	color:#ffffff!important;
+}
+
+#jform_amount_custom{display:none;}
+
