@@ -101,7 +101,7 @@ if (isset($freshInstallMsg)) :
 				<?php 	$isBeneficiaryVolunteers = $donorwizUser-> isBeneficiary('com_dw_opportunities');?>
 				<?php if ($isBeneficiaryVolunteers) :?>
 				<?php JFactory::getLanguage()->load('com_dw_opportunities');?>
-				<a href="<?php echo JRoute::_('volunteer/?created_by='.$act->actor);?>" class="uk-button uk-button-blank uk-button-mini uk-float-right">
+				<a href="<?php echo JRoute::_('volunteer/?created_by='.$act->actor);?>" class="uk-button uk-button-blank uk-button-mini uk-float-right" style="border:0;">
 					<i class="uk-icon uk-icon-users"></i>
 					<?php echo JText::_('COM_DW_OPPORTUNITIES_OPPORTUNITY_VOLUNTEERS'); ?>
 				</a>
