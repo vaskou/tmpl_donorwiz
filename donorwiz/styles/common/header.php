@@ -44,7 +44,7 @@
 			?>
 			
 			
-									<?php echo JLayoutHelper::render(
+			<?php echo JLayoutHelper::render(
 				'popup-button', 
 				array (
 					'isAjax' => true,
@@ -55,7 +55,7 @@
 
 					'layoutPath' => JPATH_ROOT .'/components/com_donorwiz/layouts/user',
 					'layoutName' => 'login',
-					'layoutParams' => array()
+					'layoutParams' => array( 'mode' => 'register' )
 				), 
 				JPATH_ROOT .'/components/com_donorwiz/layouts/popup' , 
 				null ); 
