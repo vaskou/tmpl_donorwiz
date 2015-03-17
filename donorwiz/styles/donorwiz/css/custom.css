@@ -320,8 +320,10 @@ font-weight: normal;
 .layout-narrow .dw-header-sticky{position:static;}
 
 /** Social Login Buttons ************************************************************************/
-.uk-button.facebookslogin{background:#3F4E7C;color:#ffffff;}
-.uk-button.googleslogin{background:#DD4B38;color:#ffffff;}
+.uk-button.facebookslogin{background:#3F4E7C;color:#ffffff;border:1px solid #3F4E7C;}
+.uk-button.facebookslogin:hover{background:#ffffff;color:#3F4E7C;}
+.uk-button.googleslogin{background:#DD4B38;color:#ffffff;border:1px solid #DD4B38;}
+.uk-button.googleslogin:hover{background:#ffffff;color:#DD4B38;}
 
 /** Forms *********************************************************************************/
 .uk-form-large.invalid{
