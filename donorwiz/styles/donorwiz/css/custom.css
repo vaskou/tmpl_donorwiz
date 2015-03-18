@@ -325,6 +325,32 @@ font-weight: normal;
 .uk-button.googleslogin{background:#DD4B38;color:#ffffff;border:1px solid #DD4B38;}
 .uk-button.googleslogin:hover{background:#ffffff;color:#DD4B38;}
 
+/*Reset slogin css*/
+.slogin-buttons .googleslogin {
+  opacity: 1;
+}
+
+.slogin-buttons .facebookslogin {
+  opacity: 1;
+}
+.slogin-buttons a {
+  display: block;
+  width: auto;
+  margin: 0;
+}
+.slogin-buttons a, .slogin-buttons a:hover {
+  -webkit-border-radius: 0px;
+  -moz-border-radius:0px;
+  border-radius: 0px;
+  text-decoration: none;
+  float: none;
+}
+
+.slogin-buttons span {
+  height: 50px;
+  width:auto;
+  display: block;
+}
 /** Forms *********************************************************************************/
 .uk-form-large.invalid{
 border-color: #dc8d99!important;
