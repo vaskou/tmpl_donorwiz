@@ -79,6 +79,7 @@ include($this['path']->path('layouts:theme.config.php'));
 	<?php //include($this['path']->path('theme:styles').'/common/footer.php'); ?>
 
 	<?php include($this['path']->path('theme:styles').'/common/offcanvas.php'); ?>
-
+	
+	<?php include($this['path']->path('theme:styles').'/common/intercom.php'); ?>
 </body>
 </html>

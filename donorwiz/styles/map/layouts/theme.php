@@ -90,6 +90,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		<div class="uk-offcanvas-bar"><?php echo $this['widgets']->render('offcanvas'); ?></div>
 	</div>
 	<?php endif; ?>
-
+	
+	<?php include($this['path']->path('theme:styles').'/common/intercom.php'); ?>
 </body>
 </html>

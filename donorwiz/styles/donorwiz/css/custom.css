@@ -288,6 +288,12 @@ border:1px solid #e5097f;
 color:#ffffff!important;
 }
 
+.uk-button-warning,
+.uk-button-warning:hover
+{
+background-color: #f9a124;
+color:#fff;
+}
 
 
 
