@@ -11,10 +11,10 @@
 // No direct access to this file
 defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
-$doc = JFactory::getDocument();
-$doc->addStyleSheet(JURI::root().'media/com_slogin/comslogin.css')
+//$doc = JFactory::getDocument();
+//$doc->addStyleSheet(JURI::root().'media/com_slogin/comslogin.css')
 ?>
-<div class="login">
+<div class="login uk-container uk-container-center uk-text-center" style="max-width:600px;">
 
     <h1>
         <?php echo JText::_('COM_SLOGIN_COMPARISON'); ?>
@@ -24,25 +24,34 @@ $doc->addStyleSheet(JURI::root().'media/com_slogin/comslogin.css')
         <?php echo JText::sprintf('COM_SLOGIN_COMPARISON_DESC', $this->email); ?>
     </div>
 
-    <form action="<?php echo JRoute::_('index.php?option=com_slogin&task=join_mail'); ?>" method="post">
+    <form class="uk-form uk-form-horizontal form-validate" action="<?php echo JRoute::_('index.php?option=com_slogin&task=join_mail'); ?>" method="post">
         <fieldset>
-            <div class="login-fields">
-                <label id="username-lbl" for="username" class=" required">
-                    <?php echo JText::_('COM_SLOGIN_USERNAME_LABEL'); ?>
-                    <span class="star">&nbsp;*</span>
-                </label>
-                <input type="text" name="username" id="username" value="" class="validate-username required" size="25">
+            <div class="uk-form-row uk-margin-small-top">
+                
+				<label id="username-lbl" for="username" class="required uk-hidden"></label>
+				<div class="uk-width-1-1">
+				<div class="uk-form-icon uk-width-1-1">
+					<i class="uk-icon-envelope-o"></i>
+					<input type="text" name="username" value="" class="validate-username required uk-form-large uk-width-1-1" size="25" placeholder="<?php echo JText::_('COM_SLOGIN_USERNAME_LABEL'); ?>">
+				</div>
+				</div>
+
             </div>
-            <div class="login-fields">
-                <label id="password-lbl" for="password" class=" required">
-                    <?php echo JText::_('COM_SLOGIN_PASS'); ?>
-                    <span class="star">&nbsp;*</span>
-                </label>
-                <input type="password" name="password" id="password" value=""
-                       class="validate-password required" size="25">
+            
+			<div class="uk-form-row uk-margin-small-top">
+                <label id="password-lbl" for="password" class="required uk-hidden"></label>
+				<div class="uk-width-1-1">
+				<div class="uk-form-icon uk-width-1-1">
+					<i class="uk-icon-lock"></i>
+					<input type="password" name="password" value="" class="validate-password required uk-form-large uk-width-1-1" size="25" placeholder="<?php echo JText::_('COM_SLOGIN_PASS'); ?>">
+				</div>
+				</div>
+
             </div>
-            <button type="submit" class="button"><?php echo JText::_('COM_SLOGIN_JOIN'); ?></button>
-            <input type="hidden" name="return"
+			<div class="uk-form-row">
+				<button type="submit" class="button validate uk-button uk-button-primary uk-button-large uk-width-1-1"><?php echo JText::_('COM_SLOGIN_JOIN'); ?></button>
+            </div>
+		   <input type="hidden" name="return"
                    value="<?php echo base64_encode($this->params->get('login_redirect_url', $this->form->getValue('return'))); ?>"/>
             <input type="hidden" name="user_id" value="<?php echo $this->id; ?>"/>
             <input type="hidden" name="provider" value="<?php echo $this->provider; ?>"/>
@@ -51,15 +60,25 @@ $doc->addStyleSheet(JURI::root().'media/com_slogin/comslogin.css')
         </fieldset>
     </form>
 
-    <?php echo JText::_('COM_SLOGIN_LOST_PASS'); ?>
+    <h2><?php echo JText::_('COM_SLOGIN_LOST_PASS'); ?></h2>
 
-    <form id="user-registration" action="<?php echo JRoute::_('/index.php?option=com_users&task=reset.request') ?>" method="post"
-          class="form-validate">
+    <form id="user-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=reset.request') ?>" method="post" class="uk-form uk-form-horizontal form-validate">
         <p><?php echo JText::_('COM_SLOGIN_LOST_PASS_DESC'); ?></p>
-        <fieldset>
-            <input type="text" name="jform[email]" id="jform_email" value="<?php echo $this->email ?>" readonly="readonly" class="validate-email required invalid" size="30" aria-required="true" required="required" aria-invalid="true" />
-        </fieldset>
-        <button type="submit" class="validate"><?php echo JText::_('COM_SLOGIN_SUBMIT'); ?></button>
-        <?php echo JHtml::_('form.token'); ?>
+		<div class="uk-form-row uk-margin-small-top">
+			<div class="uk-width-1-1">
+				<div class="uk-form-icon uk-width-1-1">
+					<i class="uk-icon-envelope-o"></i>
+					<input type="text" name="jform[email]" value="<?php echo $this->email ?>" readonly="readonly" class="validate-email required invalid uk-form-large uk-width-1-1" size="30" aria-required="true" required="required" aria-invalid="true" />
+				</div>
+			</div>
+        </div>
+		<div class="uk-form-row">
+        <button type="submit" class="validate uk-button uk-button-primary uk-button-large uk-width-1-1"><?php echo JText::_('COM_SLOGIN_SUBMIT'); ?></button>
+        
+        </div>
+		
+		<?php echo JHtml::_('form.token'); ?>
+
     </form>
+	
 </div>
