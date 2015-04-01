@@ -1,4 +1,4 @@
-<article class="uk-article dw-article" <?php if ($permalink) echo 'data-permalink="'.$permalink.'"'; ?>>
+<article class="uk-article dw-blog-article" <?php if ($permalink) echo 'data-permalink="'.$permalink.'"'; ?>>
 	
 	<?php if ($image && $image_alignment == 'none') : ?>
     	<?php 
@@ -54,7 +54,6 @@
 		?>
 
 	</p>
-    <div class="addthis_sharing_toolbox"></div>
 	<?php endif; ?>
 
 	<?php if ($image && $image_alignment != 'none') : ?>

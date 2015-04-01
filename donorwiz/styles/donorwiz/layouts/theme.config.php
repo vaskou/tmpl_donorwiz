@@ -115,6 +115,7 @@ $config->set('body_config', json_encode($body_config));
 // add css
 $this['asset']->addFile('css', 'css:theme.css');
 $this['asset']->addFile('css', 'css:custom.css');
+$this['asset']->addFile('css', 'css:blog.css');
 
 
 // add scripts
@@ -140,7 +141,8 @@ if ($this['useragent']->browser() == 'msie') {
 }
 
 //donorwiz
-$head[] = sprintf("<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=greek' rel='stylesheet' type='text/css'>");
+$head[] = sprintf("<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek' rel='stylesheet' type='text/css'>");
+$head[] = sprintf("<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,greek' rel='stylesheet' type='text/css'>");
 
 if (isset($head)) {
 	$this['template']->set('head', implode("\n", $head));
