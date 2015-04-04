@@ -45,7 +45,8 @@
 
 					'layoutPath' => JPATH_ROOT .'/components/com_donorwiz/layouts/user',
 					'layoutName' => 'login',
-					'layoutParams' => array()
+					'layoutParams' => array('isPopup'=>true),
+					'scripts'=>array(Juri::base() . 'media/com_donorwiz/js/registration.js')
 				), 
 				JPATH_ROOT .'/components/com_donorwiz/layouts/popup' , 
 				null ); 
@@ -63,7 +64,8 @@
 
 					'layoutPath' => JPATH_ROOT .'/components/com_donorwiz/layouts/user',
 					'layoutName' => 'login',
-					'layoutParams' => array( 'mode' => 'register' )
+					'layoutParams' => array( 'mode' => 'register', 'isPopup'=>true ),
+					'scripts'=>array(Juri::base() . 'media/com_donorwiz/js/registration.js')
 				), 
 				JPATH_ROOT .'/components/com_donorwiz/layouts/popup' , 
 				null ); 
