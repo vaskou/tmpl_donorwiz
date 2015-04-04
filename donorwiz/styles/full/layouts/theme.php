@@ -4,13 +4,13 @@ include($this['path']->path('layouts:theme.config.php'));
 
 ?>
 <!DOCTYPE HTML>
-<html lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
+<html style="background:#e5e5e5;" lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
 
 <head>
 <?php echo $this['template']->render('head'); ?>
 </head>
 
-<body class="<?php echo $this['config']->get('body_classes'); ?> layout-full">
+<body class="<?php echo $this['config']->get('body_classes'); ?> layout-full" >
 	
 	<?php include($this['path']->path('theme:styles').'/common/header.php'); ?>
 
@@ -117,21 +117,8 @@ include($this['path']->path('layouts:theme.config.php'));
 		
 
 		
-		<!--
 
-		<?php if ($this['widgets']->count('bottom-b')) : ?>
-		<div id="fullscreen" class="colored">
-		<div class="uk-container uk-container-center">
-		<section class="<?php echo $grid_classes['bottom-b']; echo $display_classes['bottom-b']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('bottom-b', array('layout'=>$this['config']->get('grid.bottom-b.layout'))); ?></section>
-		</div>
-		</div>
-		<?php endif; ?>
 		
-		-->
-	
-		<?php //include($this['path']->path('theme:styles').'/common/footer.php'); ?>
-
-
 	</div>
 
 
@@ -140,6 +127,6 @@ include($this['path']->path('layouts:theme.config.php'));
 
 	<?php include($this['path']->path('theme:styles').'/common/intercom.php'); ?>
 
-
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54f343316f6f29ff" async="async"></script>
 </body>
 </html>

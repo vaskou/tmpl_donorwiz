@@ -1,3 +1,5 @@
+<?php JFactory::getLanguage()->load('com_donorwiz');?>
+
 <div class="uk-header fullscreen dw-header-sticky">
 
 	<div class="uk-grid uk-margin-top uk-margin-bottom">
@@ -14,15 +16,21 @@
 		</div>
 	
 		<div class="uk-width-4-10 uk-text-center">
+			
 			<a class="tm-logo" href="<?php echo $this['config']->get('site_url'); ?>">
-				<img src="http://assets.donorwiz.com/logo/logo.png" width="199" height="30" alt="DONORwiz - Η αλληλεγγύη στην πράξη" title="Αρχική Σελίδα" data-uk-tooltip/>
+				<img 	src="http://assets.donorwiz.com/logo/logo.png" 
+						width="199" height="30" 
+						alt="<?php echo JText::_('COM_DONORWIZ_DONORWIZ');?> - <?php echo JText::_('COM_DONORWIZ_SOLIDARITY_APPLIED');?>" 
+						title="<?php echo JText::_('COM_DONORWIZ_HOMEPAGE');?>" 
+						data-uk-tooltip
+				>
 			</a>
+			
 		</div>
 		
 		<div class="uk-width-3-10">
 			<div class="uk-margin-right toolbar-r uk-text-right">
 				
-				<?php JFactory::getLanguage()->load('com_donorwiz');?>
 				
 				<?php if ( JFactory::getUser() -> guest && JFactory::getApplication()->input->get('view', '', 'string') != 'login' && JFactory::getApplication()->input->get('view', '', 'string') != 'register' ) : ?>
 					
@@ -51,7 +59,7 @@
 					'buttonLink' => JRoute::_('index.php?option=com_donorwiz&view=login&Itemid=314&mode=register&return='.base64_encode(JFactory::getURI()->toString()).'&'. JSession::getFormToken() .'=1'),
 					'buttonText' => JText::_('COM_DONORWIZ_REGISTER_UPPERCASE'),
 					'buttonIcon' => '',
-					'buttonType' => 'uk-hidden-small uk-button uk-button-blank',
+					'buttonType' => 'uk-hidden-small uk-button uk-button-blank uk-button-border',
 
 					'layoutPath' => JPATH_ROOT .'/components/com_donorwiz/layouts/user',
 					'layoutName' => 'login',
@@ -60,12 +68,6 @@
 				JPATH_ROOT .'/components/com_donorwiz/layouts/popup' , 
 				null ); 
 			?>
-
-			<!--
-					
-					<a class="uk-hidden-small uk-button uk-button-link" href="<?php echo JRoute::_('index.php?option=com_donorwiz&view=login&Itemid=314&return='.base64_encode(JFactory::getURI()->toString()).'&'. JSession::getFormToken() .'=1');?>"><?php echo JText::_('COM_DONORWIZ_LOGIN_UPPERCASE');?></a>
-					<a class="uk-hidden-small uk-button uk-button-blank" href="<?php echo JRoute::_('index.php?option=com_donorwiz&view=login&Itemid=314&mode=register&return='.base64_encode(JFactory::getURI()->toString()).'&'. JSession::getFormToken() .'=1');?>"><?php echo JText::_('COM_DONORWIZ_REGISTER_UPPERCASE');?></a>
-				-->
 				
 				<?php endif;?>
 				
@@ -79,14 +81,13 @@
 						$avatarUrl = $user->getThumbAvatar();
 						$name = $user->getDisplayName();
 					?>
-						<a href="<?php echo JRoute::_('index.php?option=com_donorwiz&view=dashboard&Itemid=298');?>">
+						<a href="<?php echo JRoute::_('index.php?Itemid=404');?>" title="<?php echo JText::_('COM_DONORWIZ_DASHBOARD');?>" data-uk-tooltip>
+						<span class="uk-hidden-small"><?php echo $name;?></span>
 						<img class="uk-thumbnail uk-thumbnail-extra-mini" src="<?php echo $avatarUrl;?>" alt="<?php echo $name;?>">
 						</a>
 				<?php endif;?>
 				
 			</div>
 		</div>
-		
 	</div>
-	
 </div>
