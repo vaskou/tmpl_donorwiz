@@ -129,6 +129,10 @@ $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/timepicker.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/notify.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/sticky.js');
 
+//add donorwiz scripts
+$this['asset']->addFile('js', 'js:donorwiz/dw-wizard.js');
+$this['asset']->addFile('js', 'js:donorwiz/maps/oms.min.js');
+$this['asset']->addFile('js', 'js:donorwiz/maps/script.js');
 
 
 $this['asset']->addFile('js', 'js:social.js');
@@ -136,8 +140,12 @@ $this['asset']->addFile('js', 'js:theme.js');
 
 // internet explorer
 if ($this['useragent']->browser() == 'msie') {
+	
+	
 	$head[] = sprintf('<!--[if IE 8]><link rel="stylesheet" href="%s"><![endif]-->', $this['path']->url('css:ie8.css'));
     $head[] = sprintf('<!--[if lte IE 8]><script src="%s"></script><![endif]-->', $this['path']->url('js:html5.js'));
+	$head[] = sprintf('<!--[if IE 9]><link rel="stylesheet" href="%s"><![endif]-->', $this['path']->url('css:ie9.css'));
+    
 }
 
 //donorwiz

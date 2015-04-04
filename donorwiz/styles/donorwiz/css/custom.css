@@ -136,8 +136,6 @@ margin:0;
 /*Main Menu*/
 
 
-/*com_volunteers*/
-.volunteering-opportunity.teaser:hover .showonhover{display:block!important;}
 
 /*Opportunity Wizard*/
 #opportunity-wizard-toolbar button.published.uk-active{background-color: #8cc14c;color: #ffffff;}
@@ -153,7 +151,9 @@ a.uk-button.facebook{ background:#3F4E7C; color:#ffffff;}
 
 
 /************** Fullscreen Slideshow ****************/
-
+.uk-cover,
+.uk-cover-background
+{background:#e5097f;}
 
 
 
@@ -218,31 +218,35 @@ a.uk-button.facebook{ background:#3F4E7C; color:#ffffff;}
 	color: #e5097f;
 	text-decoration: none;
 }
+/*******************************************/
 
-
-
-/*****************************************************/
-
-
-/************ Footer ********************************/
+.dw-bottom-b:hover a ,
+.dw-bottom-b:hover p,
+.dw-bottom-b:hover *
+{
+	color:#fff!important;
+}
+/************ Footer ***********************/
 .tm-footer {
 	background:#444;
 }
-.uk-nav-side > li.uk-active > a {
-background: none;
-color:#e5097f!important;
+
+.tm-footer:hover a ,
+.tm-footer:hover p,
+.tm-footer:hover *
+{
+	color:#fff!important;
 }
 
-
-
-
-
+.uk-nav-side > li.uk-active > a {
+	background: none;
+	color:#e5097f!important;
+}
 /*****************************************************/
 
 /** Volunteering Opportunities ****************************************************/
-.volunteering-opportunity.teaser{border:1px solid #f7f7f7;border-bottom:1px solid #dddddd;}
-.volunteering-opportunity.teaser:hover{background:#ffffff;border:1px solid #aaaaaa;}
-
+.volunteering-opportunity.teaser:hover{background:#ffffff;}
+.volunteering-opportunity.teaser:hover .readmore{background:#e5097f;color:#ffffff;}
 
 /** Pagination ****************************************************/
 ul.uk-pagination>li { border-radius:50%;}
@@ -252,7 +256,6 @@ ul.uk-pagination>li { border-radius:50%;}
 /** Statistics ************************************************************************/
 .statistics .number{}
 .statistics .pending-color{color:orange;}
-
 
 /** Icons ************************************************************************/
 .uk-icon-extra-large:before {
@@ -281,6 +284,13 @@ font-size: 500%;
 background: #ffffff;
 border:1px solid #dddddd;
 }
+
+.uk-button-border{
+
+border:1px solid #444444;
+}
+
+
 .uk-button-blank.uk-active,
 .uk-button-blank:hover{
 background: #e5097f;
@@ -323,13 +333,22 @@ font-weight: normal;
 .layout-map .tm-main{padding-top:76px;}
 
 /** Narrow Layout ************************************************************************/
-.layout-narrow .dw-header-sticky{position:static;}
+
 
 /** Social Login Buttons ************************************************************************/
 .uk-button.facebookslogin{background:#3F4E7C;color:#ffffff;border:1px solid #3F4E7C;}
 .uk-button.facebookslogin:hover{background:#ffffff;color:#3F4E7C;}
 .uk-button.googleslogin{background:#DD4B38;color:#ffffff;border:1px solid #DD4B38;}
 .uk-button.googleslogin:hover{background:#ffffff;color:#DD4B38;}
+
+
+/* Dashboard ***********************************************************************************/
+.uk-nav li > a{ color:#ffffff;}
+.uk-nav li > a:hover,
+.uk-nav li.uk-active > a
+{ color:#e5097f;}
+
+
 
 /*Reset slogin css*/
 .slogin-buttons .googleslogin {
@@ -379,35 +398,65 @@ color: #d85030!important;
 	background: #e5097f;
 	color: #ffffff;
 }
-
 .uk-panel-box-donations{
 	background: #e5097f;
 	color: #ffffff;
 }
-
 .uk-panel-box-volunteers{
 	background: #e5097f;
 	color: #ffffff;
 }
-
 .uk-panel-dark {
-
-background: #333333;
-color: #ffffff;
-
+	background: #333333;
+	color: #ffffff;
 }
 
+
+.uk-panel-border {
+	border:1px solid rgba(0,0,0,.1);
+}
+
+.uk-panel-transparent {
+	opacity: 0.5;
+}
+.uk-panel-transparent:hover{
+	opacity: 1;
+}
+
+.uk-panel-shadow {
+	-moz-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+	box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+	
+}
+.uk-panel-transparent {
+	background: transparent;
+}
+
+.uk-panel-bg {
+	background: #e5e5e5;
+}
+
+.uk-panel-blank {
+	background: #ffffff;
+}
+.uk-panel-primary {
+	background: #e5097f;
+}
 .uk-panel-dark .uk-nav-side .uk-nav-header {
-color: #ffffff;
+	color: #ffffff;
 }
-
 .uk-panel-dark .uk-nav-side > li > a {
-color: #ffffff;
+	color: #ffffff;
+}
+.uk-panel-dark .uk-nav-side .uk-nav-divider {
+	border-top: 1px solid #555555;
 }
 
-.uk-panel-dark .uk-nav-side .uk-nav-divider {
-border-top: 1px solid #555555;
-}
+
+
+
+
 
 
 #jform_amount.amnt>input[type=radio]{margin:0 3px;}
@@ -440,3 +489,9 @@ border-top: 1px solid #555555;
 
 #jform_amount_custom{display:none;}
 
+
+.jomsocial {
+  background: #e5e5e5;
+  padding: 0;
+
+}
