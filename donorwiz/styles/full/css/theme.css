@@ -475,21 +475,21 @@ iframe {
 @media (min-width: 1920px) {
   /* Horizontal gutter */
   .uk-grid:not(.uk-grid-preserve) {
-    margin-left: -35px;
+    margin-left: -25px;
   }
   .uk-grid:not(.uk-grid-preserve) > * {
-    padding-left: 35px;
+    padding-left: 25px;
   }
   /* Vertical gutter */
   .uk-grid:not(.uk-grid-preserve) + .uk-grid {
-    margin-top: 35px;
+    margin-top: 25px;
   }
   .uk-grid:not(.uk-grid-preserve) > .uk-grid-margin {
-    margin-top: 35px;
+    margin-top: 25px;
   }
   /* Vertical gutter for panels */
   .uk-grid:not(.uk-grid-preserve) > * > .uk-panel + .uk-panel {
-    margin-top: 35px;
+    margin-top: 25px;
   }
 }
 /*
@@ -554,16 +554,16 @@ iframe {
      * Large gutter
      */
   .uk-grid-divider:not(.uk-grid-preserve):not(:empty) {
-    margin-left: -35px;
-    margin-right: -35px;
+    margin-left: -25px;
+    margin-right: -25px;
   }
   .uk-grid-divider:not(.uk-grid-preserve) > * {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .uk-grid-divider:not(.uk-grid-preserve):empty {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 /*
@@ -1260,13 +1260,13 @@ a.uk-panel-box-secondary:hover {
 /* Modifier: `uk-panel-divider`
  ========================================================================== */
 .uk-panel + .uk-panel-divider {
-  margin-top: 50px !important;
+  margin-top: 40px !important;
 }
 .uk-panel + .uk-panel-divider:before {
   content: "";
   display: block;
   position: absolute;
-  top: -25px;
+  top: -20px;
   left: 0;
   right: 0;
   border-top: 1px solid #dddddd;
@@ -1469,7 +1469,7 @@ a.uk-panel-box-secondary:hover {
  * `ul` needed for higher specificity to override padding
  */
 ul.uk-nav-sub {
-  padding: 5px 0 5px 0;
+  padding: 5px 0 5px 40px;
 }
 /* Modifier: `uk-nav-parent-icon`
  ========================================================================== */
@@ -6651,7 +6651,7 @@ a.uk-thumbnail:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 1920px;
-  padding: 0 25px;
+  padding: 0 20px;
 }
 /* Large screen and bigger */
 @media (min-width: 1920px) {
@@ -8051,8 +8051,8 @@ html {
 .tm-headerbar,
 .tm-navbar,
 .tm-footer {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* Only large screens */
 @media (min-width: 1920px) {
@@ -8066,7 +8066,7 @@ html {
 /* Only phones */
 @media (max-width: 767px) {
   .tm-navbar {
-    margin: 0 -25px 25px -25px;
+    margin: 0 -20px 20px -20px;
     border-width: 0 0 1px 0;
   }
   .tm-logo-small:hover {
@@ -8087,11 +8087,11 @@ html {
  * Toolbar
  */
 .tm-toolbar .uk-float-left .uk-panel {
-  margin: 0 25px 0 0;
+  margin: 0 20px 0 0;
   float: left;
 }
 .tm-toolbar .uk-float-right .uk-panel {
-  margin: 0 0 0 25px;
+  margin: 0 0 0 20px;
   float: right;
 }
 /*
@@ -8109,7 +8109,7 @@ html {
  * Middle
  */
 .tm-main > :nth-child(n+2) {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .tm-content > :last-child {
   margin-bottom: 0;
@@ -8122,7 +8122,7 @@ html {
   text-align: center;
 }
 .tm-footer .uk-panel + .uk-panel {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 /*
  * To-top scroller

@@ -4,7 +4,7 @@ include($this['path']->path('layouts:theme.config.php'));
 
 ?>
 <!DOCTYPE HTML>
-<html lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
+<html style="background:#e5e5e5;" lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
 
 <head>
 <?php echo $this['template']->render('head'); ?>
@@ -21,7 +21,7 @@ include($this['path']->path('layouts:theme.config.php'));
 	</div>
 	<?php endif; ?>
 	
-	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom" style="background:#ffffff;">
+	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom" style="padding-top:76px">
 		
 		<?php if ($this['widgets']->count('top-a')) : ?>
 		<section class="<?php echo $grid_classes['top-a']; echo $display_classes['top-a']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('top-a', array('layout'=>$this['config']->get('grid.top-a.layout'))); ?></section>
