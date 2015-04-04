@@ -83,7 +83,7 @@
 						$avatarUrl = $user->getThumbAvatar();
 						$name = $user->getDisplayName();
 					?>
-						<a href="<?php echo JRoute::_('index.php?Itemid=404');?>" title="<?php echo JText::_('COM_DONORWIZ_DASHBOARD');?>" data-uk-tooltip>
+						<a href="<?php echo JRoute::_('dashboard/home');?>" title="<?php echo JText::_('COM_DONORWIZ_DASHBOARD');?>" data-uk-tooltip>
 						<span class="uk-hidden-small"><?php echo $name;?></span>
 						<img class="uk-thumbnail uk-thumbnail-extra-mini" src="<?php echo $avatarUrl;?>" alt="<?php echo $name;?>">
 						</a>
