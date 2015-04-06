@@ -82,6 +82,21 @@
 	</p>
 	<?php endif; ?>
 
+	<!-- Donorwiz -->
+    <?php
+		$params=array(
+			'donate_button_params'=>array(
+				'beneficiary_id'=>$author_id,
+				'isPopup'=>true
+			),
+			'vounteer_params'=>array(
+				'actor'=>$author_id
+			)
+		);
+		echo JLayoutHelper::render('toolbar.toolbar',$params,JPATH_ROOT.'/components/com_donorwiz/layouts');
+	?>
+     <!-- /Donorwiz -->
+
 	<?php if ($edit) : ?>
 	<p><?php echo $edit; ?></p>
 	<?php endif; ?>

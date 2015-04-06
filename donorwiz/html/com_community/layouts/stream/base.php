@@ -89,23 +89,18 @@ if (isset($freshInstallMsg)) :
             <div class="joms-stream joms-js--stream joms-js--stream-<?php echo $act->id; ?>" data-stream-id="<?php echo $act->id; ?>" data-stream-type="<?php echo $act->app; ?>">
 				
 				<!-- yesinternet : Donate button inside activity stream-->
-				<?php	$donorwizUser=new DonorwizUser(intval($act->actor));?>
-				<?php 	$isBeneficiaryDonations = $donorwizUser-> isBeneficiary('com_dw_donations');?>
-				<?php if ($isBeneficiaryDonations) :?>
-				<?php JFactory::getLanguage()->load('com_dw_donations');?>
-				<a href="<?php echo JRoute::_('donate/?beneficiary_id='.$act->actor);?>" class="uk-button uk-button-primary uk-button-mini uk-float-right">
-					<i class="uk-icon uk-icon-euro"></i>
-					<?php echo JText::_('COM_DW_DONATIONS_FORM_LBL_DONATE'); ?>
-				</a>
-				<?php endif;?>
-				<?php 	$isBeneficiaryVolunteers = $donorwizUser-> isBeneficiary('com_dw_opportunities');?>
-				<?php if ($isBeneficiaryVolunteers) :?>
-				<?php JFactory::getLanguage()->load('com_dw_opportunities');?>
-				<a href="<?php echo JRoute::_('volunteer/?created_by='.$act->actor);?>" class="uk-button uk-button-blank uk-button-mini uk-float-right" style="border:0;">
-					<i class="uk-icon uk-icon-users"></i>
-					<?php echo JText::_('COM_DW_OPPORTUNITIES_OPPORTUNITY_VOLUNTEERS'); ?>
-				</a>
-				<?php endif;?>
+                <?php 
+					$params=array(
+						'donate_button_params'=>array(
+							'beneficiary_id'=>$act->actor,
+							'isPopup'=>true
+						),
+						'vounteer_params'=>array(
+							'actor'=>$act->actor
+						)
+					);
+					echo JLayoutHelper::render('toolbar.toolbar',$params,JPATH_ROOT.'/components/com_donorwiz/layouts');
+				?>
 				<!-- yesinternet -->
 
 				<?php

@@ -47,7 +47,7 @@ $args = array(
 // set author
 $author = $this->item->created_by_alias ?: $this->item->author;
 $args['author'] = $params->get('show_author') && !empty($author) ? $author : '';
-
+$args['author_id']=$this->item->created_by;
 // set edit
 $args['edit']  = $canEdit ? JHtml::_('icon.edit', $this->item, $params) : '';
 $args['edit'] .= $params->get('show_print_icon') ? JHtml::_('icon.print_popup', $this->item, $params) : '';
