@@ -34,6 +34,8 @@ display:none;
 
 a[title="JomSocial, Social Networking for Joomla!"]{display:none;}
 
+#joms-profile--information > .joms-gap + div {display:none}
+#community-wrap {margin-top:}
 /*#community-wrap .js-focus-cover>img[src=""]+.js-focus-gradient {
 display:none;
 } */
@@ -325,7 +327,8 @@ font-weight: normal;
 .layout-donorwiz .tm-main{padding-top:76px;}
 
 /** Full Layout ************************************************************************/
-/* .layout-full .tm-main{padding-top:76px;} */
+
+
 
 
 
@@ -416,6 +419,10 @@ color: #d85030!important;
 	border:1px solid rgba(0,0,0,.1);
 }
 
+.uk-panel-widget {
+	border:1px solid rgba(0,0,0,.3);
+}
+
 .uk-panel-transparent {
 	opacity: 0.5;
 }
@@ -489,9 +496,18 @@ color: #d85030!important;
 
 #jform_amount_custom{display:none;}
 
-
+/* Jomsocial */
 .jomsocial {
   background: #e5e5e5;
   padding: 0;
 
 }
+.joms-subnav--desktop {
+  background: #ffffff;
+}
+h3.joms-page__title{
+font-size:37px;
+line-height:46px;
+color:#444;
+}
+.joms-form__legend{color:#444;}
