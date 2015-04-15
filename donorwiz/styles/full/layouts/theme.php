@@ -31,7 +31,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		<?php endif; ?>
 
 		<?php if ($this['widgets']->count('main-top + main-bottom + sidebar-a + sidebar-b') || $this['config']->get('system_output', true)) : ?>
-		<div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
+		<div class="tm-middle uk-grid uk-margin-top uk-margin-bottom" data-uk-grid-match data-uk-grid-margin>
 
 			<?php if ($this['widgets']->count('main-top + main-bottom') || $this['config']->get('system_output', true)) : ?>
 			<div class="<?php echo $columns['main']['class'] ?>">
