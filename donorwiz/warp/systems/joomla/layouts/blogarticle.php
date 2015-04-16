@@ -38,13 +38,44 @@
 			$date     = ($date) ? ($datetime ? '<time datetime="'.$datetime.'">'.JHtml::_('date', $date, JText::_('DATE_FORMAT_LC3')).'</time>' : JHtml::_('date', $date, JText::_('DATE_FORMAT_LC3'))) : '';
 			$category = ($category && $category_url) ? '<a href="'.$category_url.'">'.$category.'</a>' : $category;
 
-			if($author && $date) {
+			/*if($author && $date) {
 				printf(JText::_('TPL_WARP_META_AUTHOR_DATE'), $author, $date);
 			} elseif ($author) {
 				printf(JText::_('TPL_WARP_META_AUTHOR'), $author);
 			} elseif ($date) {
 				printf(JText::_('TPL_WARP_META_DATE'), $date);
-			}
+			}*/
+		?>	
+			<!-- Donorwiz -->
+            <?php 
+				JHtml::stylesheet(Juri::base().'components/com_community/templates/jomsocial/assets/css/style.css');
+            	$user = CFactory::getUser($author_id);
+				$actorLink = '<a href="' . CUrlHelper::userLink($user->id) . '" class="joms-stream__user">' . $user->getDisplayName() . '</a>';
+			?>
+            <?php if($author):?>
+                <div class="joms-avatar--stream">
+                	<?php if (is_object($user)):?>
+                        <a href="<?php echo ((int)$author_id !== 0) ? CUrlHelper::userLink($author_id) : 'javascript:void(0);'; ?>">
+                            <img data-author="<?php echo $author_id; ?>" src="<?php echo $user->getThumbAvatar(); ?>" alt="<?php echo $user->getDisplayName(); ?>">
+                        </a>
+                    <?php else: ?>
+                    	<img src="components/com_community/assets/user-Male-thumb.png" alt="male" />
+                    <?php endif ?>
+                </div>
+			<?php endif ?>
+            
+            <div class="joms-stream__meta">
+				<?php echo $actorLink ?>
+                <?php if($date):?>
+                <span class="joms-stream__time">
+                    <small>
+                        <?php printf(JText::_('TPL_WARP_META_DATE'), $date); ?>
+                    </small>
+                </span>
+                <?php endif ?>
+            </div>
+			<!-- /Donorwiz -->
+        <?php
 
 			if ($category) {
 				echo ' ';
