@@ -30,7 +30,7 @@
 	<?php echo $hook_aftertitle; ?>
 
 	<?php if ($author || $date || $category) : ?>
-	<p class="uk-article-meta">
+	<div class="uk-article-meta">
 
 		<?php
 
@@ -84,7 +84,7 @@
 
 		?>
 
-	</p>
+	</div>
 	<?php endif; ?>
 
 	<?php if ($image && $image_alignment != 'none') : ?>
