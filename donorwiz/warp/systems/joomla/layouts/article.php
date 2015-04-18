@@ -87,7 +87,7 @@
 	</div>
     
     <!-- Donorwiz -->
-    <div class="uk-display-inline-block">
+    <div class="dw-article-toolbar">
     <?php
 		$params=array(
 			'donate_button_params'=>array(
@@ -101,7 +101,7 @@
 		echo JLayoutHelper::render('toolbar.toolbar',$params,JPATH_ROOT.'/components/com_donorwiz/layouts');
 	?>
     </div>
-    <div class="addthis_sharing_toolbox uk-display-inline-block"></div>
+    <div class="addthis_sharing_toolbox"></div>
      <!-- /Donorwiz -->
 	<?php endif; ?>
 
