@@ -4,4 +4,32 @@
 .dw-blog-article{
 	padding:20px;
 	border:1px solid #eee;
+	background:#fff;
+}
+
+.dw-blog{
+	padding:20px;
+	border:1px solid #eee;
+	background:#fff;
+}
+
+.dw-blog .uk-nav li > a{
+	color:#444;
+}
+
+.dw-blog .uk-nav li.uk-active > a{
+	color:#e5097f;
+}
+.dw-blog .uk-nav li > a:hover{
+	color:#e5097f;
+}
+
+.dw-article{
+	padding:20px;
+	border:1px solid #eee;
+	background:#fff;
+}
+
+.dw-article-toolbar{
+	margin:5px 2px;
 }

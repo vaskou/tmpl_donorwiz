@@ -87,21 +87,6 @@ if (isset($freshInstallMsg)) :
             ?>
 
             <div class="joms-stream joms-js--stream joms-js--stream-<?php echo $act->id; ?>" data-stream-id="<?php echo $act->id; ?>" data-stream-type="<?php echo $act->app; ?>">
-				
-				<!-- yesinternet : Donate button inside activity stream-->
-                <?php 
-					$params=array(
-						'donate_button_params'=>array(
-							'beneficiary_id'=>$act->actor,
-							'isPopup'=>true
-						),
-						'vounteer_params'=>array(
-							'actor'=>$act->actor
-						)
-					);
-					echo JLayoutHelper::render('toolbar.toolbar',$params,JPATH_ROOT.'/components/com_donorwiz/layouts');
-				?>
-				<!-- yesinternet -->
 
 				<?php
 
@@ -273,6 +258,21 @@ if (isset($freshInstallMsg)) :
                 }
 
                 ?>
+                
+                <!-- yesinternet : Donate button inside activity stream-->
+                <?php 
+					$params=array(
+						'donate_button_params'=>array(
+							'beneficiary_id'=>$act->actor,
+							'isPopup'=>true
+						),
+						'vounteer_params'=>array(
+							'actor'=>$act->actor
+						)
+					);
+					echo JLayoutHelper::render('toolbar.toolbar',$params,JPATH_ROOT.'/components/com_donorwiz/layouts');
+				?>
+				<!-- yesinternet -->
             </div>
 
             <?php
