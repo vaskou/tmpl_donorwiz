@@ -48,21 +48,29 @@ color:#fff;
 */
 
 /*header*/
-.uk-header{background:#fff;border-bottom:1px solid #e5097f;}
-
-
-.tm-headerbar { margin-bottom: 20px; }
-
+.uk-header{
+	background:#fff;
+	border-bottom:1px solid #e5097f;
+}
+.tm-headerbar {
+	margin-bottom: 20px;
+}
 .tm-toolbar {
 	margin:20px 0;
 }
 .tm-toolbar .cMod-Notify{
-
-margin:0;
-
+	margin:0;
+}
+.visibility-hidden{visibility:hidden;}
+.dw-article-transparent .dw-article {
+	border: 0;
+	background: none;
 }
 
-.visibility-hidden{visibility:hidden;}
+/*** Offcanvas menu *********************************************************/
+#howitworks-offcanvas-menu{
+	border-top:1px solid #dddddd;
+}
 
 /*Map*/
 .map-container{position:fixed;height:100%;top:76px;left:0;bottom:0;}

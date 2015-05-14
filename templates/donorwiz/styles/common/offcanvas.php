@@ -37,6 +37,7 @@
 	</div>		
 		<?php echo $this['widgets']->render('offcanvas'); ?>
 		
+		<hr class="uk-article-divider"></hr>
 		<div class="uk-panel">
 			<div class="uk-width-1-1 uk-text-center">
 				<a target="_blank" href="https://www.facebook.com/DONORwiz" class="uk-button-contrast uk-icon-button uk-icon-facebook"></a>
