@@ -34,9 +34,19 @@
 	</div>
 	
 	<?php endif;?>
-	</div>
-				
+	</div>		
 		<?php echo $this['widgets']->render('offcanvas'); ?>
+		
+		<hr class="uk-article-divider"></hr>
+		<div class="uk-panel">
+			<div class="uk-width-1-1 uk-text-center">
+				<a target="_blank" href="https://www.facebook.com/DONORwiz" class="uk-button-contrast uk-icon-button uk-icon-facebook"></a>
+				<a target="_blank" href="https://twitter.com/DONORwiz" class="uk-button-contrast uk-icon-button uk-icon-twitter uk-margin-large-left uk-margin-large-right"></a>
+				<a target="_blank" href="https://plus.google.com/u/0/b/116814216754971857234/116814216754971857234/about" class="uk-button-contrast uk-icon-button uk-icon-google-plus"></a>
+			</div>
+		 </div>
+			
 	</div>
+
 </div>
 <?php endif; ?>

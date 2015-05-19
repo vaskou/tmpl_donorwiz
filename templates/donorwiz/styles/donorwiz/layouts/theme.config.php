@@ -128,6 +128,7 @@ $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/upload.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/timepicker.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/notify.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/sticky.js');
+$this['asset']->addFile('js', 'warp:vendor/uikit/js/components/tooltip.js');
 
 //add donorwiz scripts
 $this['asset']->addFile('js', 'js:donorwiz/dw-wizard.js');

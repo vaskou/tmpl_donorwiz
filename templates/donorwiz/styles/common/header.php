@@ -15,9 +15,9 @@
 	
 		</div>
 	
-		<div class="uk-width-4-10 uk-text-center">
+		<div class="uk-width-4-10 uk-text-center uk-vertical-align" style="height:35px;">
 			
-			<a class="tm-logo" href="<?php echo $this['config']->get('site_url'); ?>">
+			<a class="tm-logo uk-vertical-align-middle" href="<?php echo $this['config']->get('site_url'); ?>">
 				<img 	src="http://assets.donorwiz.com/logo/logo.png" 
 						width="199" height="30" 
 						alt="<?php echo JText::_('COM_DONORWIZ_DONORWIZ');?> - <?php echo JText::_('COM_DONORWIZ_SOLIDARITY_APPLIED');?>" 
@@ -28,13 +28,13 @@
 			
 		</div>
 		
-		<div class="uk-width-3-10">
+		<div class="uk-width-3-10 uk-hidden-small">
 			<div class="uk-margin-right toolbar-r uk-text-right">
 				
 				
-				<?php if ( JFactory::getUser() -> guest && JFactory::getApplication()->input->get('view', '', 'string') != 'login' && JFactory::getApplication()->input->get('view', '', 'string') != 'register' ) : ?>
+		<?php if ( JFactory::getUser() -> guest && JFactory::getApplication()->input->get('view', '', 'string') != 'login' && JFactory::getApplication()->input->get('view', '', 'string') != 'register' ) : ?>
 					
-								<?php echo JLayoutHelper::render(
+			<?php echo JLayoutHelper::render(
 				'popup-button', 
 				array (
 					'isAjax' => true,
@@ -71,7 +71,7 @@
 				null ); 
 			?>
 				
-				<?php endif;?>
+		<?php endif;?>
 				
 				<?php if ( !JFactory::getUser() ->guest && JFactory::getApplication()->input->get('view', '', 'string') != 'login' && JFactory::getApplication()->input->get('view', '', 'string') != 'register' ) : ?>
 					<?php //echo JLayoutHelper::render( 'notifications', array () , JPATH_ROOT .'/components/com_donorwiz/layouts/user' , null ); ?>

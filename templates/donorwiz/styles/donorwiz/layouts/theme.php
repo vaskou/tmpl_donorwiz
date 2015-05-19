@@ -20,7 +20,7 @@ include($this['path']->path('layouts:theme.config.php'));
 	</div>
 	<?php endif; ?>
 	
-	<div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+	<div class="uk-container uk-container-center uk-margin-large-bottom">
 		
 		<?php if ($this['widgets']->count('top-a')) : ?>
 		<section class="<?php echo $grid_classes['top-a']; echo $display_classes['top-a']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('top-a', array('layout'=>$this['config']->get('grid.top-a.layout'))); ?></section>

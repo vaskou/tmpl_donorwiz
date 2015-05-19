@@ -1,67 +1,25 @@
 #fullscreen{position:relative;}
-.homesearch-cta {position:absolute;bottom:0px;width:100%;background-color: rgba(0, 0, 0, 0.3);padding:25px 0;}
-.homesearch-cta h1{color:#fff;}
-.homesearch-cta p{margin:20px 0px 0px 0px;color:#fff;text-align:center;}
-.homesearch-cta a{color:#fff;text-decoration:underline;}
-
-.homesearch-cta form{text-align:center;}
-.homesearch-cta form i{color:#fff;margin-right:5px;}
-.homesearch-cta form fieldset>label{margin-right:20px;}
-.homesearch-cta form fieldset{padding:20px 10px;margin:0;background-color: rgba(255,255, 255, 0.25);}
-.homesearch-cta form fieldset:hover{background-color: rgba(229,9, 127,0.5);}
-.homesearch-cta form #value1{width:224px;}
-
 
 .tm-top-a {margin-top:-220px;}
 .home.uk-panel {background:#444444;opacity:0.5;padding:25px;}
 .home.uk-panel:hover {opacity:0.85;background:#e5097f;}
-.home .app-box-content form {margin:0;}
-.home .app-box-content form input{width:75%;margin:0}
-.home .app-box-content form a{float:right;margin-top:5px;}
-.home .app-box-footer {display:none;}
 
 #fullscreen.colored{background:#e5097f;padding:25px 0;margin:25px 0;}
+
 #fullscreen.colored p,
 #fullscreen.colored h3,
 #fullscreen.colored li
 {color:#fff;}
-#fullscreen.colored a{
-color:#ccc;
-}
- #community-wrap .js-focus-cover>img[src=""]{
-display:none;
-} 
 
-a[title="JomSocial, Social Networking for Joomla!"]{display:none;}
-
-#joms-profile--information > .joms-gap + div {display:none}
-#community-wrap {margin-top:}
-/*#community-wrap .js-focus-cover>img[src=""]+.js-focus-gradient {
-display:none;
-} */
-
-.homepage-logos{margin:50px 0;}
-.homepage-logos img{
-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(100%); 
-    
-    }
-    
-    .homepage-logos img:hover{
-     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-    -webkit-filter: grayscale(0%);
-    
-    }
+#fullscreen.colored a
+{color:#ccc;}
 
 .uk-navbar-nav > li > a.uk-button-primary{
 color:#fff;
 
 }
-.js-focus-avatar,.js-focus-avatar img{border-radius:50%;border:1px solid #444;}
 
-
-
+/*
 @media (min-width: 768px){
 	.tm-headerbar {
 		float:left;
@@ -87,57 +45,38 @@ color:#fff;
 	
 }
 
-@media (max-width: 768px){
-	
-	.tm-navbar{
-		margin: 0;
-	}
-	
-	.homesearch-cta {position:relative;background-color: transparent;padding:25px 0;}
-	.homesearch-cta h1{color:#444;}
-	.homesearch-cta form fieldset{padding:20px 10px;margin:0;background-color: rgba(229,9, 127,1);}
-	.homesearch-cta form fieldset:hover{background-color: rgba(229,9, 127,1);}
-
-	.home.uk-panel {opacity:1;background:#e5097f;}
-
-}
-
-@media (max-width: 480px){
-.home.uk-panel {opacity:1;background:#e5097f;}
-.home .app-box-content form {text-align:center;}
-.home .app-box-content form input{width:95%;margin:0}
-.home .app-box-content form a{float:none;margin-top:20px;}
-
-
-
-}
-
-
+*/
 
 /*header*/
-.uk-header{background:#fff;border-bottom:1px solid #e5097f;}
-
-
-.tm-headerbar { margin-bottom: 20px; }
-
+.uk-header{
+	background:#fff;
+	border-bottom:1px solid #e5097f;
+}
+.tm-headerbar {
+	margin-bottom: 20px;
+}
 .tm-toolbar {
 	margin:20px 0;
 }
 .tm-toolbar .cMod-Notify{
-
-margin:0;
-
+	margin:0;
+}
+.visibility-hidden{visibility:hidden;}
+.dw-article-transparent .dw-article {
+	border: 0;
+	background: none;
 }
 
-.visibility-hidden{visibility:hidden;}
+/*** Offcanvas menu *********************************************************/
+#howitworks-offcanvas-menu{
+	border-top:1px solid #dddddd;
+	margin-top:25px;
+	padding-top:25px;
+}
 
 /*Map*/
 .map-container{position:fixed;height:100%;top:76px;left:0;bottom:0;}
 #map-canvas{ position: relative; overflow:hidden ;width:100%;height:100%; top: 0; right: 0; bottom: 0; left: 0;}
-
-/*Main Menu*/
-
-
 
 /*Opportunity Wizard*/
 #opportunity-wizard-toolbar button.published.uk-active{background-color: #8cc14c;color: #ffffff;}
@@ -145,24 +84,12 @@ margin:0;
 
 a.uk-button.facebook{ background:#3F4E7C; color:#ffffff;}
 
-
-
-
-
-
-
-
 /************** Fullscreen Slideshow ****************/
 .uk-cover,
 .uk-cover-background
 {background:#e5097f;}
 
-
-
-
-
 /*****************************************************/
-
 
 .truncate {
 
@@ -170,8 +97,6 @@ a.uk-button.facebook{ background:#3F4E7C; color:#ffffff;}
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-
 
 /* Header */
 .dw-header-sticky{
@@ -292,7 +217,6 @@ border:1px solid #dddddd;
 border:1px solid #444444;
 }
 
-
 .uk-button-blank.uk-active,
 .uk-button-blank:hover{
 background: #e5097f;
@@ -306,8 +230,6 @@ color:#ffffff!important;
 background-color: #f9a124;
 color:#fff;
 }
-
-
 
 /** Text size ************************************************************************/
 
@@ -327,10 +249,6 @@ font-weight: normal;
 .layout-donorwiz .tm-main{padding-top:76px;}
 
 /** Full Layout ************************************************************************/
-
-
-
-
 
 /** Map Layout ************************************************************************/
 .layout-map .tm-main{padding-top:76px;}
@@ -460,14 +378,7 @@ color: #d85030!important;
 	border-top: 1px solid #555555;
 }
 
-
-
-
-
-
-
 #jform_amount.amnt>input[type=radio]{margin:0 3px;}
-
 
 #jform_amount0[type=radio]:before{content:'5';}
 #jform_amount1[type=radio]:before{content:'10';}
@@ -496,25 +407,28 @@ color: #d85030!important;
 
 #jform_amount_custom{display:none;}
 
-/* Jomsocial */
-.jomsocial {
-  background: #e5e5e5;
-  padding: 0;
-
+/** Jomsocial ************************************************************/
+a[title="JomSocial, Social Networking for Joomla!"]{
+    display:none;
+}
+.jomsocial{
+    background: #e5e5e5;
+    padding: 0;
 }
 .joms-subnav--desktop {
-  background: #ffffff;
+    background: #ffffff;
 }
 h3.joms-page__title{
-	font-size:37px;
+    font-size:37px;
 	line-height:46px;
 	color:#444;
 }
-.joms-form__legend{color:#444;}
+.joms-form__legend{
+    color:#444;
+}
 .joms-form__group[for="dst-offset"] { 
     display:none;
 }
-
 .joms-stream .dw-toolbar{
 	padding:0 14px 14px;	
 }
