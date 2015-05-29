@@ -432,3 +432,9 @@ h3.joms-page__title{
 .joms-stream .dw-toolbar{
 	padding:0 14px 14px;	
 }
+a[href="/people/multiprofile/changeprofile"]{
+    display:none;
+}
+a[href="/donorwiz/people/multiprofile/changeprofile"]{
+    display:none;
+}

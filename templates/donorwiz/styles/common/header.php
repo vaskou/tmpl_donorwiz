@@ -74,9 +74,9 @@
 		<?php endif;?>
 				
 				<?php if ( !JFactory::getUser() ->guest && JFactory::getApplication()->input->get('view', '', 'string') != 'login' && JFactory::getApplication()->input->get('view', '', 'string') != 'register' ) : ?>
+					
 					<?php //echo JLayoutHelper::render( 'notifications', array () , JPATH_ROOT .'/components/com_donorwiz/layouts/user' , null ); ?>
-						
-						
+					
 					<?php 
 						include_once JPATH_ROOT.'/components/com_community/libraries/core.php';
 						$user = CFactory::getUser();
@@ -84,10 +84,24 @@
 						$name = $user->getDisplayName();
 					?>
 						<a href="<?php echo JRoute::_('dashboard/home');?>" title="<?php echo JText::_('COM_DONORWIZ_DASHBOARD');?>" data-uk-tooltip>
-						<span class="uk-hidden-small"><?php echo $name;?></span>
+						<span class="uk-hidden-medium"><?php echo $name;?></span>
 						<img class="uk-thumbnail uk-thumbnail-extra-mini" src="<?php echo $avatarUrl;?>" alt="<?php echo $name;?>">
 						</a>
 				<?php endif;?>
+				
+				<?php if ( !JFactory::getUser() ->guest ) :?>
+					<?php $donorwizUser = new DonorwizUser( JFactory::getUser() -> id ); ?>
+					<?php $progress = $donorwizUser -> getProfileCompletenessProgress(); ?>
+					
+					<?php if( $progress <100 ) : ?>
+	
+						<a href="<?php echo JRoute::_('profile/edit');?>" class="uk-button uk-button-small uk-button-blank" data-uk-tooltip title="<?php echo JText::_('COM_DONORWIZ_DASHBOARD_COMPLETE_YOUR_PROFILE_WARNING');?>">
+							<i class="uk-icon-warning"></i>
+						</a>
+	
+					<?php endif;?>
+				<?php endif;?>
+
 				
 			</div>
 		</div>
