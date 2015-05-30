@@ -269,7 +269,9 @@ font-weight: normal;
 .uk-nav li.uk-active > a
 { color:#e5097f;}
 
-
+.dashboard_widget_activity_stream .joms-stream__body{padding-top:0;padding-bottom:0;}
+.dashboard_widget_activity_stream .joms-stream__body p{margin-bottom:0;}
+.dashboard_widget_activity_stream .joms-stream {border-bottom:1px solid #ccc;}
 
 /*Reset slogin css*/
 .slogin-buttons .googleslogin {
@@ -430,8 +432,17 @@ h3.joms-page__title{
     display:none;
 }
 .joms-stream .dw-toolbar{
-	padding:0 14px 14px;	
+	padding:0 14px 14px 70px;	
 }
+
+.joms-stream__body, .joms-comment__body {
+  padding-left: 70px;
+}
+
+.joms-stream__actions, .joms-comment__actions {
+padding-left: 70px;
+}
+
 a[href="/people/multiprofile/changeprofile"]{
     display:none;
 }
