@@ -12,6 +12,7 @@ include($this['path']->path('layouts:theme.config.php'));
 
 <body class="<?php echo $this['config']->get('body_classes'); ?> layout-narrow" >
 
+	<?php include($this['path']->path('theme:styles').'/common/tracking_code.php'); ?>
 	<?php include($this['path']->path('theme:styles').'/common/header.php'); ?>
 
 

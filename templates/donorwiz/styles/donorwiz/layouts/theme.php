@@ -11,7 +11,7 @@ include($this['path']->path('layouts:theme.config.php'));
 </head>
 
 <body class="<?php echo $this['config']->get('body_classes'); ?> layout-donorwiz">
-	
+	<?php include($this['path']->path('theme:styles').'/common/tracking_code.php'); ?>
 	<?php include($this['path']->path('theme:styles').'/common/header.php'); ?>
 
 	<?php if ($this['widgets']->count('fullscreen-slideshow')) : ?>

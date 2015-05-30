@@ -1,0 +1,1 @@
+<?php echo $this['config']->get('tracking_code');?>
