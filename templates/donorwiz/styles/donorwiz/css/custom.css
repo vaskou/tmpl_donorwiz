@@ -306,7 +306,9 @@ background: #fff7f8!important;
 color: #d85030!important;
 }
 
-
+.uk-form-icon:not(.uk-form-icon-flip) > select {
+  padding-left: 25px !important;
+}
 /** Bottom - B **********************************************************************/
 .dw-bottom-b{background:#444;}
 
