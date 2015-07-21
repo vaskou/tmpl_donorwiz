@@ -126,6 +126,14 @@
 		);
 		echo JLayoutHelper::render('toolbar.toolbar',$params,JPATH_ROOT.'/components/com_donorwiz/layouts');
 	?>
+    <?php
+		$social_params=array(
+		'og_url'=>JUri::root(false,$url),
+		'redirect_uri'=> JUri::getInstance()->toString(),
+		'hide_tags'=>true
+	);
+	echo JLayoutHelper::render('toolbar.social',$social_params,JPATH_ROOT.'/components/com_donorwiz/layouts');
+	?>
      <!-- /Donorwiz -->
 
 	<?php if ($edit) : ?>

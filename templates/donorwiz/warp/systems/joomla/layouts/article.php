@@ -102,6 +102,14 @@
 	?>
     </div>
     <div class="addthis_sharing_toolbox"></div>
+    
+    <?php
+    		$social_params=array(
+			'og_image'=>$image,
+			'og_type'=>'article'
+		);
+		echo JLayoutHelper::render('toolbar.social',$social_params,JPATH_ROOT.'/components/com_donorwiz/layouts');
+    ?>
      <!-- /Donorwiz -->
 	<?php endif; ?>
 
