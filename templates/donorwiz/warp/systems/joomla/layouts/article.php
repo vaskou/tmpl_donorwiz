@@ -101,12 +101,21 @@
 		echo JLayoutHelper::render('toolbar.toolbar',$params,JPATH_ROOT.'/components/com_donorwiz/layouts');
 	?>
     </div>
-    <div class="addthis_sharing_toolbox"></div>
     
     <?php
-    		$social_params=array(
-			'og_image'=>$image,
-			'og_type'=>'article'
+		$description=JHtmlString::truncate($article, 50, true, false);
+		$tags=array(
+			'title'=>$title,
+			'description'=>$description,
+			'image'=>$image,
+			'og_type'=>'article',
+			'twt_type'=>'summary_large_image'
+		);
+    	DonorwizSocial::setSocialTags( $tags );
+		$social_params=array(
+			'url'=>JUri::root(false,$url),
+			'redirect_uri'=> JUri::getInstance()->toString(),
+			'title'=>$title
 		);
 		echo JLayoutHelper::render('toolbar.social',$social_params,JPATH_ROOT.'/components/com_donorwiz/layouts');
     ?>
